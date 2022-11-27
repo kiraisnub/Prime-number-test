@@ -1,32 +1,30 @@
 #include<stdio.h>
-#include<conio.h>
+// #include<conio.h>
 
 int main()
 {
-	int a,b,c,d;
-	// clrscr();
+	int a,i,flag;
 
-	printf("\nEnter the value:-");
+	printf("Enter the number you want to test :-");
 	scanf("%d",&a);
-	d=a%2;
+	
 
-	if(a==2){
-		printf("\nThe number is a prime number");
+	for (i=2;i<a;i++)
+	{
 
+		if (a%i==0){
+
+			
+			flag=1;
+			printf("The number is not a prime number");
+			break;
 		}
-
-	else if(d!=0)
-		{
-
-		printf("\nThe number is prime number");
-			  }
-
-
-	else{
-		printf("The number is not prime number");
-
 	}
-    
-	getch();
-	return 0;
+
+	if(flag==0){
+
+		printf("The number is a prime number");
+	}
+
+	return 0;	
 }
