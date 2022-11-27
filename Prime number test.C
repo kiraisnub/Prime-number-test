@@ -3,7 +3,7 @@
 
 int main()
 {
-	int a,i,flag;
+	int a,i,flag=0;
 
 	printf("Enter the number you want to test :-");
 	scanf("%d",&a);
